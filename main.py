@@ -1,15 +1,19 @@
-# import libs 
+# import libs
+import os
 import requests
 # import things from libs
 from donationalerts import Alert
 from requests import get
 from discord_webhook import DiscordWebhook, DiscordEmbed
 from markupsafe import Markup
+from dotenv import load_dotenv
 
 # configure settings, maybe ill change it later to .env lib
-da_alert_widget_token = '7h7DyglahN670YkMj1Oj'
-webhook = DiscordWebhook(url='https://discord.com/api/webhooks/1018598316889608232/86gfueOkDrP-k72a3DV7ZDQnWKX5zxN2pggZ-tnjctwv5_WbtbqybnKojQtaX73DKEry')
-
+load_dotenv()
+da_alert_widget_token = os.environ.get('da_alert_widget_token')
+webhook = os.environ.get('webhook')
+print(f"Remote Donationalerts widget is set to: {da_alert_widget_token}")
+print(F"Webhook is set to {webhook}")
 print("Donationalerts script startup successfully!")
 
 # main part where we get and send this messages to discord
