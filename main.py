@@ -11,9 +11,10 @@ from dotenv import load_dotenv
 # configure settings, maybe ill change it later to .env lib
 load_dotenv()
 da_alert_widget_token = os.environ.get('da_alert_widget_token')
-webhook = os.environ.get('webhook')
+webhook_da = os.environ.get('webhook')
+webhook = DiscordWebhook(webhook_da)
 print(f"Remote Donationalerts widget is set to: {da_alert_widget_token}")
-print(F"Webhook is set to {webhook}")
+print(F"Webhook is set to {webhook_da}")
 print("Donationalerts script startup successfully!")
 
 # main part where we get and send this messages to discord
