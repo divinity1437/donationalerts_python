@@ -1,6 +1,7 @@
 # import libs
 import os
 import requests
+import random
 # import things from libs
 from donationalerts import Alert
 from requests import get
@@ -22,6 +23,6 @@ alert = Alert(da_alert_widget_token)
 @alert.event()
 def new_donation(event): 
 	embed = DiscordEmbed(title='_**New donation!**_', description=f'**{ event.username }** donated **{ event.amount } { event.currency }** with message: **{ event.message }**', color='03b2f8')
-	embed.set_footer(text='https://www.donationalerts.com/r/hewwo_kitty69', icon_url='https://a.okayu.me/3')
+	embed.set_footer(text='https://www.donationalerts.com/r/hewwo_kitty69', icon_url=f'https://a.okayu.me/{ random.randint(0,400)}')
 	webhook.add_embed(embed)
 	response = webhook.execute()
