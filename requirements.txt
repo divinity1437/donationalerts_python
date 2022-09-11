@@ -1,0 +1,6 @@
+discord_webhook==0.16.3
+donationalerts==1.0.1
+DonationAlertsAPI==2.0.2
+MarkupSafe==2.1.1
+python-dotenv==0.21.0
+requests==2.18.4
