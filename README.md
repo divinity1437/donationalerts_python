@@ -8,7 +8,7 @@ knowledge of linux, python will certainly help, but are by nomeans required.
 
 this guide will be targetted towards ubuntu - other distros may have slightly different setup processes.
 
-## download the osu! server codebase onto your machine
+## download the codebase onto your machine
 ```sh
 # clone repository
 git clone https://github.com/divinity1437/donationalerts_python
