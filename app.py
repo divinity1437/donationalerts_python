@@ -14,7 +14,7 @@ load_dotenv()
 donation = os.environ.get('token') #You donation alert token
 webhook_da = os.environ.get('webhook')
 webhook = DiscordWebhook(webhook_da)
-print(f"Remote DA destion set to: {donation}")
+print(f"Remote DA destination set to: {donation}")
 print(F"Webhook is set to {webhook_da}")
 print("Donationalerts script startup successfully!")
 
