@@ -3,4 +3,4 @@ donationalerts==1.0.1
 DonationAlertsAPI==2.0.2
 MarkupSafe==2.1.1
 python-dotenv==0.21.0
-requests==2.20.0
+requests==2.31.0
